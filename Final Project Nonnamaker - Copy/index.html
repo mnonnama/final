@@ -1,0 +1,189 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV-OINwQ_UAUnU2mlIHUkgYFr1KOqd6QM&callback=initMap"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	
+ 
+ 
+ 	
+ 	
+<title>Puzzles</title>
+</head>
+
+
+<body>
+<div id="nav">
+<div id="navcontainer">
+<div id="logo"><img src="images/puzzleslogo.jpg" alt="logo"></div>
+<ul class="menuhead">
+	<li class="menu-item"><a href="#">Home</a></li>
+	<li class="menu-item"><a href="#">Menu</a></li>
+	<li class="menu-item"><a href="#">Make a Reservation</a></li>
+	<li class="menu-item"><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div id="banner"></div>
+
+
+<div class="center">
+	<div id="clear" class="clearfix">
+		<div id="menuright">
+
+			<div id="menu">
+				<img src="images/menu.jpg" alt="menu">
+			</div>
+</div>
+			
+		
+
+		<div id="menuleft">
+			<div id="reserve">
+			</div>
+			<h1 id="reshead"> Make a Reservation </h1>
+				<form class="reservation-form">
+						Name:<br>
+					  <input type="text" name="name" placeholder="Name" ="Name" class="reservation-name">
+					  <br>
+					  <p>Date:<br>
+					   <input type="text" id="datepicker"></p>
+					  <br>
+					  <input type="submit" value="Submit">
+				</form>
+				<div id="reservations">
+					<table>
+					<tr>
+					<th>Name</th>
+					<th>Date</th>
+					</tr>
+					</table>
+					<table class="reservationslist"></table>
+				</div>
+				<div id="hours"><h2>Our Hours</h2>
+				<p> Monday - Thursday 11am - Midnight</p>
+				<p>Friday - Saturday 10am - 2am</p>
+				<p>Sunday Closed</p></div>
+		</div>
+	</div>
+	<div id="map"></div>
+</div>
+<script src="js/main.js"></script>
+<script id="reservation-template" type="text/x-handlebars-template">
+
+<tr><td> {{name}} </td><td>{{date}}</td></tr>
+
+</script>
+<footer>
+<div id="contactinfo">
+<h2>Contact us</h2>
+<p>Phone: 111-111-1111</p>
+<p>Address: 111 1st Street New York NY</p></div>
+</footer>
+
+
+
+</body>
+</html>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV-OINwQ_UAUnU2mlIHUkgYFr1KOqd6QM&callback=initMap"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	
+ 
+ 
+ 	
+ 	
+<title>Puzzles</title>
+</head>
+
+
+<body>
+<div id="nav">
+<div id="navcontainer">
+<div id="logo"><img src="images/puzzleslogo.jpg" alt="logo"></div>
+<ul class="menuhead">
+	<li class="menu-item"><a href="#">Home</a></li>
+	<li class="menu-item"><a href="#">Menu</a></li>
+	<li class="menu-item"><a href="#">Make a Reservation</a></li>
+	<li class="menu-item"><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div id="banner"></div>
+
+
+<div class="center">
+	<div id="clear" class="clearfix">
+		<div id="menuright">
+
+			<div id="menu">
+				<img src="images/menu.jpg" alt="menu">
+			</div>
+</div>
+			
+		
+
+		<div id="menuleft">
+			<div id="reserve">
+			</div>
+			<h1 id="reshead"> Make a Reservation </h1>
+				<form class="reservation-form">
+						Name:<br>
+					  <input type="text" name="name" placeholder="Name" ="Name" class="reservation-name">
+					  <br>
+					  <p>Date:<br>
+					   <input type="text" id="datepicker"></p>
+					  <br>
+					  <input type="submit" value="Submit">
+				</form>
+				<div id="reservations">
+					<table>
+					<tr>
+					<th>Name</th>
+					<th>Date</th>
+					</tr>
+					</table>
+					<table class="reservationslist"></table>
+				</div>
+				<div id="hours"><h2>Our Hours</h2>
+				<p> Monday - Thursday 11am - Midnight</p>
+				<p>Friday - Saturday 10am - 2am</p>
+				<p>Sunday Closed</p></div>
+		</div>
+	</div>
+	<div id="map"></div>
+</div>
+<script src="js/main.js"></script>
+<script id="reservation-template" type="text/x-handlebars-template">
+
+<tr><td> {{name}} </td><td>{{date}}</td></tr>
+
+</script>
+<footer>
+<div id="contactinfo">
+<h2>Contact us</h2>
+<p>Phone: 111-111-1111</p>
+<p>Address: 111 1st Street New York NY</p></div>
+</footer>
+
+
+
+</body>
+</html>
+
+>>>>>>> bf7a15a8ec105a09fb3e776e1be2b6fa48a8cb48
